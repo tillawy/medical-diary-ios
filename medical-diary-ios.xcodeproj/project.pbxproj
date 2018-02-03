@@ -14,6 +14,9 @@
 		106415152025DA0100406C36 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 106415132025DA0100406C36 /* LaunchScreen.storyboard */; };
 		106415202025DA0100406C36 /* medical_diary_iosTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1064151F2025DA0100406C36 /* medical_diary_iosTests.swift */; };
 		1064152B2025DA0100406C36 /* medical_diary_iosUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1064152A2025DA0100406C36 /* medical_diary_iosUITests.swift */; };
+		973FB705385C58906729AB0C /* Pods_medical_diary_ios.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B55AF34D458E1AA3CBF6785B /* Pods_medical_diary_ios.framework */; };
+		A316AC1F3B2764BB73B0D4DA /* Pods_medical_diary_iosUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 498C978C4D078817232FDD45 /* Pods_medical_diary_iosUITests.framework */; };
+		D059215C5D718D93A8DD6C6D /* Pods_medical_diary_iosTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DCE1E2F4FCB025D148849E08 /* Pods_medical_diary_iosTests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +50,15 @@
 		106415262025DA0100406C36 /* medical-diary-iosUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "medical-diary-iosUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		1064152A2025DA0100406C36 /* medical_diary_iosUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = medical_diary_iosUITests.swift; sourceTree = "<group>"; };
 		1064152C2025DA0100406C36 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		498C978C4D078817232FDD45 /* Pods_medical_diary_iosUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_medical_diary_iosUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		7024D657D30E9C4573811CCF /* Pods-medical-diary-iosUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-medical-diary-iosUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-medical-diary-iosUITests/Pods-medical-diary-iosUITests.release.xcconfig"; sourceTree = "<group>"; };
+		75FD86ABCA027258BF973D83 /* Pods-medical-diary-ios.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-medical-diary-ios.debug.xcconfig"; path = "Pods/Target Support Files/Pods-medical-diary-ios/Pods-medical-diary-ios.debug.xcconfig"; sourceTree = "<group>"; };
+		92665E75E445909C294B40C0 /* Pods-medical-diary-iosUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-medical-diary-iosUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-medical-diary-iosUITests/Pods-medical-diary-iosUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		A512C4525117925C257C12F3 /* Pods-medical-diary-iosTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-medical-diary-iosTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-medical-diary-iosTests/Pods-medical-diary-iosTests.debug.xcconfig"; sourceTree = "<group>"; };
+		B55AF34D458E1AA3CBF6785B /* Pods_medical_diary_ios.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_medical_diary_ios.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C153F8C4653BA2680CF5FC38 /* Pods-medical-diary-iosTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-medical-diary-iosTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-medical-diary-iosTests/Pods-medical-diary-iosTests.release.xcconfig"; sourceTree = "<group>"; };
+		C3B3D777679DDEB684AEA262 /* Pods-medical-diary-ios.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-medical-diary-ios.release.xcconfig"; path = "Pods/Target Support Files/Pods-medical-diary-ios/Pods-medical-diary-ios.release.xcconfig"; sourceTree = "<group>"; };
+		DCE1E2F4FCB025D148849E08 /* Pods_medical_diary_iosTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_medical_diary_iosTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +66,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				973FB705385C58906729AB0C /* Pods_medical_diary_ios.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -61,6 +74,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D059215C5D718D93A8DD6C6D /* Pods_medical_diary_iosTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -68,6 +82,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A316AC1F3B2764BB73B0D4DA /* Pods_medical_diary_iosUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -81,6 +96,8 @@
 				1064151E2025DA0100406C36 /* medical-diary-iosTests */,
 				106415292025DA0100406C36 /* medical-diary-iosUITests */,
 				106415082025DA0100406C36 /* Products */,
+				E9425A2950AE145A4499C5C9 /* Pods */,
+				1BE78EEABA97391CD07F999D /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -125,6 +142,29 @@
 			path = "medical-diary-iosUITests";
 			sourceTree = "<group>";
 		};
+		1BE78EEABA97391CD07F999D /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				B55AF34D458E1AA3CBF6785B /* Pods_medical_diary_ios.framework */,
+				DCE1E2F4FCB025D148849E08 /* Pods_medical_diary_iosTests.framework */,
+				498C978C4D078817232FDD45 /* Pods_medical_diary_iosUITests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		E9425A2950AE145A4499C5C9 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				75FD86ABCA027258BF973D83 /* Pods-medical-diary-ios.debug.xcconfig */,
+				C3B3D777679DDEB684AEA262 /* Pods-medical-diary-ios.release.xcconfig */,
+				A512C4525117925C257C12F3 /* Pods-medical-diary-iosTests.debug.xcconfig */,
+				C153F8C4653BA2680CF5FC38 /* Pods-medical-diary-iosTests.release.xcconfig */,
+				92665E75E445909C294B40C0 /* Pods-medical-diary-iosUITests.debug.xcconfig */,
+				7024D657D30E9C4573811CCF /* Pods-medical-diary-iosUITests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -132,9 +172,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 1064152F2025DA0100406C36 /* Build configuration list for PBXNativeTarget "medical-diary-ios" */;
 			buildPhases = (
+				E749F6B6502E07CFC6E12A23 /* [CP] Check Pods Manifest.lock */,
 				106415032025DA0100406C36 /* Sources */,
 				106415042025DA0100406C36 /* Frameworks */,
 				106415052025DA0100406C36 /* Resources */,
+				BEBCDDCF6822C0E80D4B11E0 /* [CP] Embed Pods Frameworks */,
+				9AC943171F203EABBF1E0551 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -149,9 +192,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 106415322025DA0100406C36 /* Build configuration list for PBXNativeTarget "medical-diary-iosTests" */;
 			buildPhases = (
+				EEA6D22312E0C5C4874356B4 /* [CP] Check Pods Manifest.lock */,
 				106415172025DA0100406C36 /* Sources */,
 				106415182025DA0100406C36 /* Frameworks */,
 				106415192025DA0100406C36 /* Resources */,
+				636A5BD0888502FDE063B15B /* [CP] Embed Pods Frameworks */,
+				6EBB1403F3BAB91B5DAFD5D0 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -167,9 +213,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 106415352025DA0100406C36 /* Build configuration list for PBXNativeTarget "medical-diary-iosUITests" */;
 			buildPhases = (
+				4A2C8179C7AFF517BF0A1ACC /* [CP] Check Pods Manifest.lock */,
 				106415222025DA0100406C36 /* Sources */,
 				106415232025DA0100406C36 /* Frameworks */,
 				106415242025DA0100406C36 /* Resources */,
+				579656D1940A46690FA7F58F /* [CP] Embed Pods Frameworks */,
+				C888CECF9DD3F50890237D0F /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -253,6 +302,160 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		4A2C8179C7AFF517BF0A1ACC /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-medical-diary-iosUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		579656D1940A46690FA7F58F /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-medical-diary-iosUITests/Pods-medical-diary-iosUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		636A5BD0888502FDE063B15B /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-medical-diary-iosTests/Pods-medical-diary-iosTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		6EBB1403F3BAB91B5DAFD5D0 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-medical-diary-iosTests/Pods-medical-diary-iosTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		9AC943171F203EABBF1E0551 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-medical-diary-ios/Pods-medical-diary-ios-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		BEBCDDCF6822C0E80D4B11E0 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-medical-diary-ios/Pods-medical-diary-ios-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Realm/Realm.framework",
+				"${BUILT_PRODUCTS_DIR}/RealmSwift/RealmSwift.framework",
+				"${BUILT_PRODUCTS_DIR}/XLForm/XLForm.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Realm.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RealmSwift.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/XLForm.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-medical-diary-ios/Pods-medical-diary-ios-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C888CECF9DD3F50890237D0F /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-medical-diary-iosUITests/Pods-medical-diary-iosUITests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E749F6B6502E07CFC6E12A23 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-medical-diary-ios-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		EEA6D22312E0C5C4874356B4 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-medical-diary-iosTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		106415032025DA0100406C36 /* Sources */ = {
@@ -424,11 +627,13 @@
 		};
 		106415302025DA0100406C36 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 75FD86ABCA027258BF973D83 /* Pods-medical-diary-ios.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = MT3362WLTN;
 				INFOPLIST_FILE = "medical-diary-ios/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.medicaldiary.app.medical-diary-ios";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -439,11 +644,13 @@
 		};
 		106415312025DA0100406C36 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C3B3D777679DDEB684AEA262 /* Pods-medical-diary-ios.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = MT3362WLTN;
 				INFOPLIST_FILE = "medical-diary-ios/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.medicaldiary.app.medical-diary-ios";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -454,6 +661,7 @@
 		};
 		106415332025DA0100406C36 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = A512C4525117925C257C12F3 /* Pods-medical-diary-iosTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -471,6 +679,7 @@
 		};
 		106415342025DA0100406C36 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C153F8C4653BA2680CF5FC38 /* Pods-medical-diary-iosTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -488,6 +697,7 @@
 		};
 		106415362025DA0100406C36 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 92665E75E445909C294B40C0 /* Pods-medical-diary-iosUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -504,6 +714,7 @@
 		};
 		106415372025DA0100406C36 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7024D657D30E9C4573811CCF /* Pods-medical-diary-iosUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
