@@ -1,20 +1,20 @@
 PODS:
-  - Realm (3.1.0):
-    - Realm/Headers (= 3.1.0)
-  - Realm/Headers (3.1.0)
-  - RealmSwift (3.1.0):
-    - Realm (= 3.1.0)
-  - XLForm (4.0.0)
+  - Eureka (4.0.1)
+  - Realm (3.1.1):
+    - Realm/Headers (= 3.1.1)
+  - Realm/Headers (3.1.1)
+  - RealmSwift (3.1.1):
+    - Realm (= 3.1.1)
 
 DEPENDENCIES:
-  - RealmSwift (~> 3.1)
-  - XLForm (~> 4.0)
+  - Eureka (~> 4.0.1)
+  - RealmSwift (~> 3.1.1)
 
 SPEC CHECKSUMS:
-  Realm: 09513d7c054678d65cd02ce09871f805b0d758ac
-  RealmSwift: e868fee9b10e5490ad94b6b6ecd9027944da1824
-  XLForm: 04110197c12187dd28a6c7295d3d8b95f4fdb4de
+  Eureka: c8bd5cc07143b6f66268c208d28a246c99b41955
+  Realm: 42d1c38a5b1bbcc828b48a7ce702cb86fc68adf4
+  RealmSwift: d31937ca6a6ee54acde64ec839523c0a3c04924b
 
-PODFILE CHECKSUM: 79baef54ba8704512014838ff8d1c5814f72cd06
+PODFILE CHECKSUM: 5f889cdaa9f62cb9f8665b769c0cdac09f7e705d
 
 COCOAPODS: 1.4.0
