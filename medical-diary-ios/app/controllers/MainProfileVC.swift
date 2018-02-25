@@ -8,26 +8,66 @@
 
 import UIKit
 import Eureka
+import RealmSwift
+import RealmSwift
 
 class MainProfileVC: FormViewController {
 
+    let realm = try! Realm()
+    
+    func appPatient() -> Patient {
+        if let patient = realm.objects(Patient.self).first {
+            return patient
+        }
+        let p = Patient()
+        try! realm.write {
+            realm.add(p)
+        }
+        return p
+    }
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        form +++ Section("Section1")
+        let patient = appPatient()
+        
+        form +++ Section("name".localized())
+            
             <<< TextRow(){ row in
-                row.title = "Text Row"
-                row.placeholder = "Enter text here"
+                row.title = "first_name".localized()
+                row.placeholder = "your_first_name".localized()
+                row.value = patient.firstName
+                row.onChange({ (textRow: TextRow) in
+                    try! self.realm.write {
+                        guard let v = row.value else { return }
+                        patient.firstName = v
+                    }
+                })
             }
-            <<< PhoneRow(){
-                $0.title = "Phone Row"
-                $0.placeholder = "And numbers here"
+            
+            <<< TextRow(){ row in
+                row.title = "father_name".localized()
+                row.placeholder = "your_father_name".localized()
+                row.value = patient.fatherName
+                row.onChange({ (textRow: TextRow) in
+                    try! self.realm.write {
+                        guard let v = row.value else { return }
+                        patient.fatherName = v
+                    }
+                })
             }
-            +++ Section("Section2")
-            <<< DateRow(){
-                $0.title = "Date Row"
-                $0.value = Date(timeIntervalSinceReferenceDate: 0)
-        }
+            
+            <<< TextRow(){ row in
+                row.title = "family_name".localized()
+                row.placeholder = "your_family_name".localized()
+                row.value = patient.familyName
+                row.onChange({ (textRow: TextRow) in
+                    try! self.realm.write {
+                        guard let v = row.value else { return }
+                        patient.familyName = v
+                    }
+                })
+            }
+
     }
     
     override func didReceiveMemoryWarning() {

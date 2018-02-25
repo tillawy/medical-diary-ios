@@ -1,0 +1,20 @@
+/* 
+  Localizable.strings
+  medical-diary-ios
+
+  Created by Mohammed Tillawy on 2/25/18.
+  Copyright © 2018 ArabiaWeather Inc. All rights reserved.
+*/
+
+
+"name" = "Name";
+
+"first_name" = "First Name";
+"your_first_name" = "Your First Name";
+
+"father_name" = "Father Name";
+"your_father_name" = "Your Father Name";
+
+
+"family_name" = "Family Name";
+"your_family_name" = "Your Family Name";

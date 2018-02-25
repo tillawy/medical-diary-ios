@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1006E0922041E9EC00E75065 /* Patient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1006E0912041E9EC00E75065 /* Patient.swift */; };
 		103A5D7A202E0CC70075D96C /* MainProfileVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 103A5D79202E0CC70075D96C /* MainProfileVC.swift */; };
 		1064150B2025DA0100406C36 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1064150A2025DA0100406C36 /* AppDelegate.swift */; };
 		1064150D2025DA0100406C36 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1064150C2025DA0100406C36 /* ViewController.swift */; };
@@ -15,6 +16,8 @@
 		106415152025DA0100406C36 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 106415132025DA0100406C36 /* LaunchScreen.storyboard */; };
 		106415202025DA0100406C36 /* medical_diary_iosTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1064151F2025DA0100406C36 /* medical_diary_iosTests.swift */; };
 		1064152B2025DA0100406C36 /* medical_diary_iosUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1064152A2025DA0100406C36 /* medical_diary_iosUITests.swift */; };
+		10BA363E20434D1D00BC5BE6 /* Swift+Localization.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10BA363D20434D1D00BC5BE6 /* Swift+Localization.swift */; };
+		10BA36412043502C00BC5BE6 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 10BA36402043502C00BC5BE6 /* Localizable.strings */; };
 		973FB705385C58906729AB0C /* Pods_medical_diary_ios.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B55AF34D458E1AA3CBF6785B /* Pods_medical_diary_ios.framework */; };
 		A316AC1F3B2764BB73B0D4DA /* Pods_medical_diary_iosUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 498C978C4D078817232FDD45 /* Pods_medical_diary_iosUITests.framework */; };
 		D059215C5D718D93A8DD6C6D /* Pods_medical_diary_iosTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DCE1E2F4FCB025D148849E08 /* Pods_medical_diary_iosTests.framework */; };
@@ -38,6 +41,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		1006E0912041E9EC00E75065 /* Patient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Patient.swift; sourceTree = "<group>"; };
 		103A5D79202E0CC70075D96C /* MainProfileVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainProfileVC.swift; sourceTree = "<group>"; };
 		106415072025DA0100406C36 /* medical-diary-ios.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "medical-diary-ios.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		1064150A2025DA0100406C36 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -52,6 +56,8 @@
 		106415262025DA0100406C36 /* medical-diary-iosUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "medical-diary-iosUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		1064152A2025DA0100406C36 /* medical_diary_iosUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = medical_diary_iosUITests.swift; sourceTree = "<group>"; };
 		1064152C2025DA0100406C36 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		10BA363D20434D1D00BC5BE6 /* Swift+Localization.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Swift+Localization.swift"; sourceTree = "<group>"; };
+		10BA36402043502C00BC5BE6 /* Localizable.strings */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; path = Localizable.strings; sourceTree = "<group>"; };
 		498C978C4D078817232FDD45 /* Pods_medical_diary_iosUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_medical_diary_iosUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		7024D657D30E9C4573811CCF /* Pods-medical-diary-iosUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-medical-diary-iosUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-medical-diary-iosUITests/Pods-medical-diary-iosUITests.release.xcconfig"; sourceTree = "<group>"; };
 		75FD86ABCA027258BF973D83 /* Pods-medical-diary-ios.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-medical-diary-ios.debug.xcconfig"; path = "Pods/Target Support Files/Pods-medical-diary-ios/Pods-medical-diary-ios.debug.xcconfig"; sourceTree = "<group>"; };
@@ -94,6 +100,8 @@
 		103A5D75202E0C3B0075D96C /* app */ = {
 			isa = PBXGroup;
 			children = (
+				10BA363F20434F1300BC5BE6 /* localization */,
+				10BA363C20434CAE00BC5BE6 /* extensions */,
 				103A5D76202E0C3B0075D96C /* models */,
 				103A5D77202E0C3B0075D96C /* controllers */,
 				103A5D78202E0C3B0075D96C /* views */,
@@ -104,6 +112,7 @@
 		103A5D76202E0C3B0075D96C /* models */ = {
 			isa = PBXGroup;
 			children = (
+				1006E0912041E9EC00E75065 /* Patient.swift */,
 			);
 			path = models;
 			sourceTree = "<group>";
@@ -175,6 +184,22 @@
 				1064152C2025DA0100406C36 /* Info.plist */,
 			);
 			path = "medical-diary-iosUITests";
+			sourceTree = "<group>";
+		};
+		10BA363C20434CAE00BC5BE6 /* extensions */ = {
+			isa = PBXGroup;
+			children = (
+				10BA363D20434D1D00BC5BE6 /* Swift+Localization.swift */,
+			);
+			path = extensions;
+			sourceTree = "<group>";
+		};
+		10BA363F20434F1300BC5BE6 /* localization */ = {
+			isa = PBXGroup;
+			children = (
+				10BA36402043502C00BC5BE6 /* Localizable.strings */,
+			);
+			path = localization;
 			sourceTree = "<group>";
 		};
 		1BE78EEABA97391CD07F999D /* Frameworks */ = {
@@ -317,6 +342,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				106415152025DA0100406C36 /* LaunchScreen.storyboard in Resources */,
+				10BA36412043502C00BC5BE6 /* Localizable.strings in Resources */,
 				106415122025DA0100406C36 /* Assets.xcassets in Resources */,
 				106415102025DA0100406C36 /* Main.storyboard in Resources */,
 			);
@@ -498,6 +524,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				1064150D2025DA0100406C36 /* ViewController.swift in Sources */,
+				10BA363E20434D1D00BC5BE6 /* Swift+Localization.swift in Sources */,
+				1006E0922041E9EC00E75065 /* Patient.swift in Sources */,
 				1064150B2025DA0100406C36 /* AppDelegate.swift in Sources */,
 				103A5D7A202E0CC70075D96C /* MainProfileVC.swift in Sources */,
 			);
