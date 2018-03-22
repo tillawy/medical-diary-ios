@@ -10,7 +10,7 @@ target 'medical-diary-ios' do
   # Pods for medical-diary-ios
 
   pod 'Eureka', '~> 4.0.1'
-  pod 'RealmSwift', '~> 3.1.1'
+  pod 'RealmSwift', '~> 3.3.0'
 
   target 'medical-diary-iosTests' do
     inherit! :search_paths
