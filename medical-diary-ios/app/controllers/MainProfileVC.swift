@@ -66,6 +66,34 @@ class MainProfileVC: FormViewController {
                     }
                 })
             }
+        
+            +++ Section("Section2")
+
+            <<< IntRow(){ row in
+                row.title = "age".localized()
+                row.placeholder = "age".localized()
+                row.value = patient.age
+                row.onChange({ (textRow: IntRow) in
+                    try! self.realm.write {
+                        guard let v = row.value else { return }
+                        patient.age = v
+                    }
+                })
+        }
+            
+        +++ Section("Section2")
+            
+            <<< SwitchRow(){ row in
+                row.title = "organ_donnor".localized()
+                row.value = patient.isOraganDonnor
+                row.onChange({ (textRow: SwitchRow) in
+                    try! self.realm.write {
+                        guard let v = row.value else { return }
+                        patient.isOraganDonnor = v
+                    }
+                })
+        }
+        
 
     }
     

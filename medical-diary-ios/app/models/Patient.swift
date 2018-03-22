@@ -15,7 +15,8 @@ class Patient: Object {
     @objc dynamic var middleName : String = ""
     @objc dynamic var lastName : String = ""
     @objc dynamic var birthDate : Date?
-    @objc dynamic var age : Int32 = 0
+    @objc dynamic var age : Int = 0
+    @objc dynamic var isOraganDonnor : Bool = false
 }
 
 
