@@ -12,9 +12,10 @@ import RealmSwift
 
 class Patient: Object {
     @objc dynamic var firstName : String = ""
-    @objc dynamic var fatherName : String = ""
-    @objc dynamic var familyName : String = ""
-    
+    @objc dynamic var middleName : String = ""
+    @objc dynamic var lastName : String = ""
+    @objc dynamic var birthDate : Date?
+    @objc dynamic var age : Int32 = 0
 }
 
 

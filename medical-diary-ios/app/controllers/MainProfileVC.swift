@@ -9,7 +9,6 @@
 import UIKit
 import Eureka
 import RealmSwift
-import RealmSwift
 
 class MainProfileVC: FormViewController {
 
@@ -47,11 +46,11 @@ class MainProfileVC: FormViewController {
             <<< TextRow(){ row in
                 row.title = "father_name".localized()
                 row.placeholder = "your_father_name".localized()
-                row.value = patient.fatherName
+                row.value = patient.middleName
                 row.onChange({ (textRow: TextRow) in
                     try! self.realm.write {
                         guard let v = row.value else { return }
-                        patient.fatherName = v
+                        patient.middleName = v
                     }
                 })
             }
@@ -59,11 +58,11 @@ class MainProfileVC: FormViewController {
             <<< TextRow(){ row in
                 row.title = "family_name".localized()
                 row.placeholder = "your_family_name".localized()
-                row.value = patient.familyName
+                row.value = patient.lastName
                 row.onChange({ (textRow: TextRow) in
                     try! self.realm.write {
                         guard let v = row.value else { return }
-                        patient.familyName = v
+                        patient.lastName = v
                     }
                 })
             }
