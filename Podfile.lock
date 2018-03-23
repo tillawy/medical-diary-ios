@@ -5,16 +5,19 @@ PODS:
   - Realm/Headers (3.3.0)
   - RealmSwift (3.3.0):
     - Realm (= 3.3.0)
+  - SwiftDate (4.5.1)
 
 DEPENDENCIES:
   - Eureka (~> 4.0.1)
   - RealmSwift (~> 3.3.0)
+  - SwiftDate (~> 4.5.1)
 
 SPEC CHECKSUMS:
   Eureka: c8bd5cc07143b6f66268c208d28a246c99b41955
   Realm: 7d74ad6c5020432f58fe5e1df90bb6d97b2c7fef
   RealmSwift: b2fa31a09c22e246026766557405505eeaad2b01
+  SwiftDate: 7b56d42a221f582047287deb256b23fc5ed49a60
 
-PODFILE CHECKSUM: 0e637d261850fc46d40d7a14994449eabf6d0405
+PODFILE CHECKSUM: 9b62ee5c5721c209373ff1e38d820977c68cf76d
 
 COCOAPODS: 1.4.0
