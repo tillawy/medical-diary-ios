@@ -237,7 +237,6 @@
 				106415042025DA0100406C36 /* Frameworks */,
 				106415052025DA0100406C36 /* Resources */,
 				BEBCDDCF6822C0E80D4B11E0 /* [CP] Embed Pods Frameworks */,
-				9AC943171F203EABBF1E0551 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -256,8 +255,6 @@
 				106415172025DA0100406C36 /* Sources */,
 				106415182025DA0100406C36 /* Frameworks */,
 				106415192025DA0100406C36 /* Resources */,
-				636A5BD0888502FDE063B15B /* [CP] Embed Pods Frameworks */,
-				6EBB1403F3BAB91B5DAFD5D0 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -277,8 +274,6 @@
 				106415222025DA0100406C36 /* Sources */,
 				106415232025DA0100406C36 /* Frameworks */,
 				106415242025DA0100406C36 /* Resources */,
-				579656D1940A46690FA7F58F /* [CP] Embed Pods Frameworks */,
-				C888CECF9DD3F50890237D0F /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -297,7 +292,7 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 0920;
-				LastUpgradeCheck = 0920;
+				LastUpgradeCheck = 0930;
 				ORGANIZATIONNAME = "ArabiaWeather Inc.";
 				TargetAttributes = {
 					106415062025DA0100406C36 = {
@@ -383,66 +378,6 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
-		579656D1940A46690FA7F58F /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-medical-diary-iosUITests/Pods-medical-diary-iosUITests-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		636A5BD0888502FDE063B15B /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-medical-diary-iosTests/Pods-medical-diary-iosTests-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		6EBB1403F3BAB91B5DAFD5D0 /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Copy Pods Resources";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-medical-diary-iosTests/Pods-medical-diary-iosTests-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		9AC943171F203EABBF1E0551 /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Copy Pods Resources";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-medical-diary-ios/Pods-medical-diary-ios-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
 		BEBCDDCF6822C0E80D4B11E0 /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -465,21 +400,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-medical-diary-ios/Pods-medical-diary-ios-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		C888CECF9DD3F50890237D0F /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Copy Pods Resources";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-medical-diary-iosUITests/Pods-medical-diary-iosUITests-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		E749F6B6502E07CFC6E12A23 /* [CP] Check Pods Manifest.lock */ = {
@@ -598,6 +518,7 @@
 				CLANG_WARN_BOOL_CONVERSION = YES;
 				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
 				CLANG_WARN_EMPTY_BODY = YES;
@@ -605,6 +526,7 @@
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
@@ -655,6 +577,7 @@
 				CLANG_WARN_BOOL_CONVERSION = YES;
 				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
 				CLANG_WARN_EMPTY_BODY = YES;
@@ -662,6 +585,7 @@
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;

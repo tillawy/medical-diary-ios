@@ -9,8 +9,8 @@ target 'medical-diary-ios' do
 
   # Pods for medical-diary-ios
 
-  pod 'Eureka', '~> 4.0.1'
-  pod 'RealmSwift', '~> 3.3.0'
+  pod 'Eureka', '~> 4.1.1'
+  pod 'RealmSwift', '~> 3.3.2'
   pod 'SwiftDate', '~> 4.5.1'
 
 

@@ -121,7 +121,17 @@ class MainProfileVC: FormViewController {
                 }
             })
         }
-        
+           
+            /*
+        +++ Section("Selectors Rows Examples")
+
+            <<< ActionSheetRow<Option>() {
+                $0.title = option.title
+                $0.selectorTitle = option.title
+                $0.displayValueFor = {(rowValue: Set<Selection>?) in
+                    return rowValue?.map({ $0.title! }).sorted().joined(separator: ", ")
+                }
+        }*/
     
 
     }
