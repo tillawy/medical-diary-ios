@@ -12,7 +12,7 @@ class Doctor: Object {
     @objc dynamic var id = UUID().uuidString
     @objc dynamic var name : String = ""
     @objc dynamic var phone : String = ""
-    
+
     static func all(in realm: Realm = try! Realm()) -> Results<Doctor> {
         return realm.objects(Doctor.self)
             .sorted(byKeyPath: "name")
@@ -28,5 +28,10 @@ class Doctor: Object {
         }
         return doc
     }
-    
+
+    func delete() {
+        try! Realm().write {
+            realm?.delete(self)
+        }
+    }
 }

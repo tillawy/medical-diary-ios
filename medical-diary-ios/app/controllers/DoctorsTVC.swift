@@ -18,7 +18,7 @@ class DoctorsTVC: UITableViewController {
         switch changes {
         case .initial:
             debugPrint("initial change")
-        case .update(_, let deletions, let insertions, let modifications):
+        case .update(_,  _,  _,  _):
             self.tableView.reloadData()
         case .error(_):
             debugPrint("error")
@@ -29,7 +29,7 @@ class DoctorsTVC: UITableViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         title = "doctors".localized()
-
+        self.navigationItem.rightBarButtonItem = self.editButtonItem
     }
 
     func callDoctor(doc: Doctor) {
@@ -90,8 +90,22 @@ class DoctorsTVC: UITableViewController {
         if indexPath.section == 0 {
             addDoctorAlert()
         }
+        if indexPath.section == 1 {
+            let doc = Doctor.all()[indexPath.row]
+            callDoctor(doc: doc)
+        }
+    }
+    
+    override func tableView(_ tableView: UITableView, canEditRowAt indexPath: IndexPath) -> Bool {
+        return indexPath.section == 1
     }
 
+    override func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCellEditingStyle, forRowAt indexPath: IndexPath) {
+        if editingStyle == .delete {
+            let doc = Doctor.all()[ indexPath.row ]
+            doc.delete()
+        }
+    }
     /*
     // MARK: - Navigation
 

@@ -22,6 +22,7 @@
 		1089B51A20B8AF5C0035ADBF /* Doctor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1089B51920B8AF5C0035ADBF /* Doctor.swift */; };
 		10BA363E20434D1D00BC5BE6 /* Swift+Localization.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10BA363D20434D1D00BC5BE6 /* Swift+Localization.swift */; };
 		10BA36412043502C00BC5BE6 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 10BA36402043502C00BC5BE6 /* Localizable.strings */; };
+		10DA433F20C1C23400D8B1F5 /* FamilyTVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10DA433E20C1C23400D8B1F5 /* FamilyTVC.swift */; };
 		973FB705385C58906729AB0C /* Pods_medical_diary_ios.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B55AF34D458E1AA3CBF6785B /* Pods_medical_diary_ios.framework */; };
 		A316AC1F3B2764BB73B0D4DA /* Pods_medical_diary_iosUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 498C978C4D078817232FDD45 /* Pods_medical_diary_iosUITests.framework */; };
 		D059215C5D718D93A8DD6C6D /* Pods_medical_diary_iosTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DCE1E2F4FCB025D148849E08 /* Pods_medical_diary_iosTests.framework */; };
@@ -66,6 +67,7 @@
 		1089B51920B8AF5C0035ADBF /* Doctor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Doctor.swift; sourceTree = "<group>"; };
 		10BA363D20434D1D00BC5BE6 /* Swift+Localization.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Swift+Localization.swift"; sourceTree = "<group>"; };
 		10BA36402043502C00BC5BE6 /* Localizable.strings */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; path = Localizable.strings; sourceTree = "<group>"; };
+		10DA433E20C1C23400D8B1F5 /* FamilyTVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FamilyTVC.swift; sourceTree = "<group>"; };
 		498C978C4D078817232FDD45 /* Pods_medical_diary_iosUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_medical_diary_iosUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		7024D657D30E9C4573811CCF /* Pods-medical-diary-iosUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-medical-diary-iosUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-medical-diary-iosUITests/Pods-medical-diary-iosUITests.release.xcconfig"; sourceTree = "<group>"; };
 		75FD86ABCA027258BF973D83 /* Pods-medical-diary-ios.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-medical-diary-ios.debug.xcconfig"; path = "Pods/Target Support Files/Pods-medical-diary-ios/Pods-medical-diary-ios.debug.xcconfig"; sourceTree = "<group>"; };
@@ -129,6 +131,7 @@
 		103A5D77202E0C3B0075D96C /* controllers */ = {
 			isa = PBXGroup;
 			children = (
+				10DA433E20C1C23400D8B1F5 /* FamilyTVC.swift */,
 				103A5D79202E0CC70075D96C /* MainProfileVC.swift */,
 				105F190320B01A9000A56B50 /* HomeVC.swift */,
 				1089B51720B8416E0035ADBF /* DoctorsTVC.swift */,
@@ -484,6 +487,7 @@
 				1070A9C520BDD07400B6900F /* UITableView+RealmChanges.swift in Sources */,
 				1006E0922041E9EC00E75065 /* Patient.swift in Sources */,
 				105F190420B01A9000A56B50 /* HomeVC.swift in Sources */,
+				10DA433F20C1C23400D8B1F5 /* FamilyTVC.swift in Sources */,
 				1064150B2025DA0100406C36 /* AppDelegate.swift in Sources */,
 				103A5D7A202E0CC70075D96C /* MainProfileVC.swift in Sources */,
 			);
