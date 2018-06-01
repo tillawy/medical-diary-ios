@@ -6,11 +6,10 @@
 //  Copyright © 2018 ArabiaWeather Inc. All rights reserved.
 //
 
-import Foundation
 import RealmSwift
 
-
 class Patient: Object {
+    @objc dynamic var id = UUID().uuidString
     @objc dynamic var firstName : String = ""
     @objc dynamic var middleName : String = ""
     @objc dynamic var lastName : String = ""
@@ -18,5 +17,3 @@ class Patient: Object {
     @objc dynamic var age : Int = 0
     @objc dynamic var isOraganDonnor : Bool = false
 }
-
-

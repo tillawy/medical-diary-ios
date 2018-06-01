@@ -12,6 +12,12 @@ target 'medical-diary-ios' do
   pod 'Eureka', '~> 4.1.1'
   pod 'RealmSwift', '~> 3.3.2'
   pod 'SwiftDate', '~> 4.5.1'
+  pod 'SnapKit', '~> 4.0.0'
+
+  pod 'SwiftLint'
+  
+  pod 'RxSwift',    '~> 4.0'
+  pod 'RxCocoa',    '~> 4.0'
 
 
   target 'medical-diary-iosTests' do

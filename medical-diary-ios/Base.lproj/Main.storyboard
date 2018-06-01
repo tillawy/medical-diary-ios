@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="k6l-X3-kOi">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="k6l-X3-kOi">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -54,21 +54,86 @@
             </objects>
             <point key="canvasLocation" x="1551" y="-1129"/>
         </scene>
-        <!--الرئيسية-->
+        <!--HomeVC-->
         <scene sceneID="F76-As-xmu">
             <objects>
-                <viewController id="U8C-6F-ryD" sceneMemberID="viewController">
+                <viewController id="U8C-6F-ryD" customClass="HomeVC" customModule="medical_diary_ios" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="KwU-ec-upJ">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="6fH-VO-VMf"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="الرئيسية" image="tabbar-dashboard" selectedImage="tabbar-dashboard" id="Uen-Fu-y07"/>
+                    <navigationItem key="navigationItem" id="NjS-tV-16n"/>
+                    <connections>
+                        <segue destination="j6J-x6-uSX" kind="show" identifier="FamilyVCSegue" id="zgm-yn-4mP"/>
+                        <segue destination="siM-bq-BND" kind="show" identifier="DoctorsTVCSegue" id="Fy4-WA-SZz"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Glr-18-9iw" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1320" y="-203"/>
+            <point key="canvasLocation" x="2729" y="-347"/>
+        </scene>
+        <!--DoctorsTVC-->
+        <scene sceneID="zgg-dc-k5K">
+            <objects>
+                <tableViewController id="siM-bq-BND" customClass="DoctorsTVC" customModule="medical_diary_ios" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="jO3-In-Enq">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="AddDoctorReuseID" textLabel="yKV-iq-OD1" rowHeight="75" style="IBUITableViewCellStyleDefault" id="Qay-8c-STt">
+                                <rect key="frame" x="0.0" y="28" width="375" height="75"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="Qay-8c-STt" id="cUl-T2-LbY">
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="74.5"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="Add Doctor" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="yKV-iq-OD1">
+                                            <rect key="frame" x="16" y="0.0" width="343" height="74.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                </tableViewCellContentView>
+                            </tableViewCell>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="DoctorReuseID" textLabel="BLv-eB-u0U" detailTextLabel="gXW-xV-f8I" rowHeight="75" style="IBUITableViewCellStyleSubtitle" id="Wk0-yi-s3c">
+                                <rect key="frame" x="0.0" y="103" width="375" height="75"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="Wk0-yi-s3c" id="wrU-y3-DfU">
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="74.5"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="Doctor Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="BLv-eB-u0U">
+                                            <rect key="frame" x="16" y="17" width="102" height="20.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="00 970 3 12341234" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="gXW-xV-f8I">
+                                            <rect key="frame" x="16" y="40.5" width="110.5" height="14.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                </tableViewCellContentView>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="siM-bq-BND" id="xy3-9t-PIW"/>
+                            <outlet property="delegate" destination="siM-bq-BND" id="dXh-4E-c3f"/>
+                        </connections>
+                    </tableView>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="oFe-Y9-VAV" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3629.5" y="-614.5"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="Gvn-EH-NTa">
@@ -80,7 +145,7 @@
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </tabBar>
                     <connections>
-                        <segue destination="U8C-6F-ryD" kind="relationship" relationship="viewControllers" id="371-Na-77o"/>
+                        <segue destination="dkh-BF-W10" kind="relationship" relationship="viewControllers" id="371-Na-77o"/>
                         <segue destination="oIk-CN-5Pt" kind="relationship" relationship="viewControllers" id="27q-YE-6Cc"/>
                         <segue destination="du3-dC-DSX" kind="relationship" relationship="viewControllers" id="k7U-fU-Xrc"/>
                     </connections>
@@ -89,10 +154,44 @@
             </objects>
             <point key="canvasLocation" x="-452" y="-1965"/>
         </scene>
+        <!--الرئيسية-->
+        <scene sceneID="d24-SE-axy">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="dkh-BF-W10" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="الرئيسية" image="tabbar-dashboard" selectedImage="tabbar-dashboard" id="Uen-Fu-y07"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="ef4-ZI-KYE">
+                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="U8C-6F-ryD" kind="relationship" relationship="rootViewController" id="oO5-hN-UsX"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="0Wf-mo-xDH" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1757.5999999999999" y="-290.10494752623691"/>
+        </scene>
+        <!--FamilyVC-->
+        <scene sceneID="FPi-cd-aMI">
+            <objects>
+                <viewController id="j6J-x6-uSX" customClass="FamilyVC" customModule="medical_diary_ios" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Lbm-OD-aHg">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="Oj8-h0-YJ8"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="tPj-KQ-2gd" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3630" y="191"/>
+        </scene>
     </scenes>
     <resources>
         <image name="SpaceDesign" width="853" height="926"/>
-        <image name="tabbar-dashboard" width="21" height="22"/>
+        <image name="tabbar-dashboard" width="23" height="22"/>
         <image name="tabbar-info" width="13" height="26"/>
         <image name="tabbar-profile" width="22" height="21"/>
     </resources>

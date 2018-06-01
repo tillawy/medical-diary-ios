@@ -14,26 +14,26 @@ import SwiftDate
 class MainProfileVC: FormViewController {
 
     let realm = try! Realm()
-    
+
     func appPatient() -> Patient {
         if let patient = realm.objects(Patient.self).first {
             return patient
         }
-        let p = Patient()
+        let patient = Patient()
         try! realm.write {
-            realm.add(p)
+            realm.add(patient)
         }
-        return p
+        return patient
     }
-    
+
     override func viewDidLoad() {
         super.viewDidLoad()
         let patient = appPatient()
-        
-        form 
+
+        form
         +++ Section("name".localized())
         
-        <<< TextRow(){ row in
+        <<< TextRow{ row in
             row.title = "first_name".localized()
             row.placeholder = "your_first_name".localized()
             row.value = patient.firstName
@@ -45,7 +45,7 @@ class MainProfileVC: FormViewController {
             })
         }
         
-        <<< TextRow(){ row in
+        <<< TextRow{ row in
             row.title = "father_name".localized()
             row.placeholder = "your_father_name".localized()
             row.value = patient.middleName
@@ -57,21 +57,21 @@ class MainProfileVC: FormViewController {
             })
         }
         
-        <<< TextRow(){ row in
+        <<< TextRow{ row in
             row.title = "family_name".localized()
             row.placeholder = "your_family_name".localized()
             row.value = patient.lastName
             row.onChange({ (textRow: TextRow) in
                 try! self.realm.write {
-                    guard let v = row.value else { return }
-                    patient.lastName = v
+                    guard let val = row.value else { return }
+                    patient.lastName = val
                 }
             })
         }
-    
+
         +++ Section("Age")
 
-        <<< IntRow(){ row in
+        <<< IntRow { row in
             row.title = "age".localized()
             row.placeholder = "age".localized()
             row.value = patient.age
@@ -86,11 +86,10 @@ class MainProfileVC: FormViewController {
                     birthRow?.value =  newBirthDate
                     birthRow?.updateCell()
                 }
-                
             })
         }
             
-        <<< DateRow(){
+        <<< DateRow {
             $0.title = "birth_date".localized()
             if let birthDate = patient.birthDate {
                 $0.value = birthDate
@@ -108,10 +107,10 @@ class MainProfileVC: FormViewController {
                 }
             })
         }
-        
+
         +++ Section("Section2")
-        
-        <<< SwitchRow(){ row in
+
+        <<< SwitchRow{ row in
             row.title = "organ_donnor".localized()
             row.value = patient.isOraganDonnor
             row.onChange({ (textRow: SwitchRow) in
@@ -121,7 +120,7 @@ class MainProfileVC: FormViewController {
                 }
             })
         }
-           
+        
             /*
         +++ Section("Selectors Rows Examples")
 
